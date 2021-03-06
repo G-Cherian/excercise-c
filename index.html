@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h><b>Excercise C: Pipeline Demo</b></h>
+    <br>
+    <p>
+      Enter you name: <input type="text" id="myText" name="fname" value="Mickey"><br>
+      <button onclick="myFunction()">submit</button>
+    </p>
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+      var t_name = document.getElementById("myText").value;
+      var greetingText = "Welcome "
+      var message = greetingText.concat(t_name);
+
+      document.getElementById("demo").innerHTML = message;
+    }
+    </script>
+
+  </body>
+</html>
